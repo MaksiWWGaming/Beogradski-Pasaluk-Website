@@ -1,0 +1,1324 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(https://fonts.cdnfonts.com/css/minecraft-4);
+@import url(https://fonts.googleapis.com/css2?family=Special+Elite&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap);
+@font-face {
+  font-family: "MinecraftFont";
+  src: url(font/cyrillic-mojang-font-beta.ttf);
+}
+@keyframes FadeInLoad {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes TopBottomLoad {
+  0% {
+    transform: translateY(-200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+@keyframes HoverZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+@keyframes HoverZoomOut {
+  0% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes NavItemHover {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(180deg);
+  }
+}
+@keyframes DropDownLoad {
+  0% {
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+@keyframes CardHover {
+  0% {
+    background: linear-gradient(to top left, transparent 0%, rgba(255, 255, 255, 0.1019607843) 0%) left;
+  }
+  100% {
+    background: linear-gradient(to top left, transparent 10%, rgba(255, 255, 255, 0.1019607843) 100%) center;
+  }
+}
+@keyframes BreathingXY {
+  0% {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleX(1.05);
+    transform: scaleY(1.02);
+  }
+  100% {
+    transform: scaleX(1);
+    transform: scaleY(1);
+  }
+}
+@keyframes BreathingX {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(1.05);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes Tugging {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+@keyframes BGMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode #dark-mode-button {
+  border: 0;
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .carousel-inner .carousel-item img {
+  filter: brightness(80%);
+}
+.dark-mode .navbar {
+  background-color: #121212;
+  box-shadow: 0 4px 3px 0px #e2e2e2;
+}
+.dark-mode .navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.dark-mode .navbar .nav-link {
+  color: #fff;
+}
+.dark-mode .navbar .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode .navbar .nav-link:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+.dark-mode .navbar .dropdown-menu {
+  background-color: #121212;
+  border: 1px solid white;
+}
+.dark-mode .navbar .dropdown-menu .dropdown-item {
+  color: #fff;
+  background-color: #121212;
+}
+.dark-mode .navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #444444;
+}
+.dark-mode .navbar .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode .navbar .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+  background-color: #fff;
+}
+.dark-mode .navbar .dropdown-menu .dropdown-divider {
+  background-color: #fff;
+}
+.dark-mode main .pad .container span {
+  background-color: #121212;
+}
+.dark-mode main .container .card {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid white;
+}
+.dark-mode main .container .card a {
+  color: #000;
+}
+.dark-mode main .container .card a:hover {
+  color: #fff;
+}
+.dark-mode main .container .card .card-body .card-text a {
+  color: #fff;
+}
+.dark-mode main .container .card .card-body .btn-primary {
+  border: 1px solid white;
+  background-color: #fff;
+  color: #000;
+}
+.dark-mode main .container .card .card-body .btn-primary:hover {
+  border: 1px solid white;
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode main .container .card .card-body details summary {
+  padding: 1% 0;
+}
+.dark-mode main .container .card .card-body details a {
+  color: #fff;
+}
+.dark-mode main .container .accordion .accordion-button {
+  background-color: #0d0d0d;
+  color: #fff;
+}
+.dark-mode main .container .accordion .accordion-body {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode main .container .accordion .accordion-body a {
+  color: #fff;
+}
+.dark-mode main .pad-join .container p span {
+  background-color: #121212;
+}
+.dark-mode main .pad-mc-roles table {
+  border: 1px solid black;
+}
+.dark-mode main .pad-mc-roles table thead tr th {
+  color: #fff;
+  background-color: #121212;
+}
+.dark-mode main .pad-mc-roles table thead #thPasa {
+  color: #FFFF55;
+}
+.dark-mode main .pad-mc-roles table tbody tr th {
+  color: #fff;
+  background-color: #121212;
+}
+.dark-mode main .pad-mc-roles table tbody tr td {
+  background-color: #121212;
+}
+.dark-mode main #join-button {
+  background-color: #fff;
+  color: #000;
+}
+.dark-mode main #join-button:hover {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid white;
+}
+.dark-mode main .pad-katastar {
+  margin-top: 8%;
+  margin-bottom: -5%;
+}
+@media only screen and (max-width: 1250px) {
+  .dark-mode main .pad-katastar {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .dark-mode main .pad-katastar {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .dark-mode main .pad-katastar {
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .dark-mode main .pad-katastar {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+.dark-mode main .pad-katastar #Toast-Alert {
+  box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
+  background-color: #121212;
+}
+.dark-mode main .pad-katastar #Toast-Alert .toast-header {
+  background-color: #121212;
+  color: #fff;
+  border-bottom: 1px solid white;
+}
+.dark-mode main .pad-katastar #Toast-Alert .toast-header .btn-close {
+  color: #fff;
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 button {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid white;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-item.active {
+  background-color: #f3f6f4;
+  color: #000;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu {
+  border: 1px solid white;
+  background-color: #121212;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+  color: #fff;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item:hover {
+  background-color: #444444;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-divider {
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar hr {
+  color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarChoice button {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarChoice .active {
+  font-weight: bold !important;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-item.active {
+  background-color: #f3f6f4;
+  color: #000;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu {
+  border: 1px solid white;
+  background-color: #121212;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+  color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu .dropdown-item:hover {
+  background-color: #444444;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarChoice .dropdown-menu .dropdown-divider {
+  background-color: #fff;
+}
+.dark-mode main .pad-katastar #KatastarMapChoice button {
+  background-color: #121212;
+  color: #fff;
+  border: 1px solid white;
+}
+.dark-mode main .pad-katastar #KatastarMapChoice button:hover {
+  background-color: #fff;
+  color: #000;
+}
+.dark-mode footer {
+  border-top: 1px solid white;
+}
+.dark-mode footer div span {
+  color: #fff;
+}
+.dark-mode footer .bi {
+  fill: #fff;
+}
+.dark-mode #Controls {
+  background-color: #121212;
+  border-bottom: 1px solid white;
+}
+.dark-mode #Controls p a {
+  color: #fff;
+}
+.dark-mode #Controls #MapChoice button {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode #Controls #MapChoice .active {
+  font-weight: bold !important;
+  color: #121212;
+}
+.dark-mode #Controls #MapChoice .dropdown-item.active {
+  background-color: #121212;
+  color: #000;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu {
+  border: 1px solid white;
+  background-color: #121212;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+  color: #fff;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu .dropdown-item:hover {
+  background-color: #444444;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+  background-color: #fff;
+}
+.dark-mode #Controls #MapChoice .dropdown-menu .dropdown-divider {
+  background-color: #fff;
+}
+.dark-mode #Controls #active {
+  background-color: #121212;
+  color: #000;
+}
+.dark-mode .separator {
+  color: #fff;
+}
+.dark-mode .separator::before,
+.dark-mode .separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid white;
+}
+.dark-mode .pad-katastar-map #KatastarChoice button {
+  background-color: #121212;
+  color: #fff;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .active {
+  font-weight: bold !important;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-item.active {
+  background-color: #f3f6f4;
+  color: #000;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu {
+  border: 1px solid white;
+  background-color: #121212;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+  color: #fff;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item:hover {
+  background-color: #444444;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+  background-color: #fff;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+  background-color: #fff;
+}
+.dark-mode .pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-divider {
+  background-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: FadeInLoad 1s ease;
+  animation-fill-mode: both;
+  overflow-x: hidden;
+  font-family: Lora, serif;
+  color: #000;
+  background-attachment: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  opacity: 100%;
+  background-color: #f3f6f4;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  width: 1px;
+}
+
+::-moz-scrollbar {
+  width: 3px;
+  height: 3px;
+  opacity: 100%;
+  background-color: #f3f6f4;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #000;
+  border-radius: 10px;
+  width: 1px;
+}
+
+.navbar {
+  box-shadow: 0 4px 3px 0px #000;
+  animation: TopBottomLoad 1s ease;
+  background-color: #f3f6f4;
+  padding: 0 3rem;
+  font-family: Cormorant SC, sans-serif;
+}
+.navbar .navbar-brand img {
+  max-width: 15vw;
+  display: block;
+  width: 100%;
+  animation: HoverZoomOut 0.5s ease;
+}
+.navbar .navbar-brand img:hover {
+  animation: HoverZoom 0.5s ease;
+  animation-fill-mode: both;
+}
+.navbar .navbar-nav {
+  color: #000;
+}
+.navbar .nav-item {
+  font-size: 1.5em;
+  margin: 30px;
+}
+.navbar .nav-link {
+  animation: HoverZoomOut 0.3s ease;
+}
+.navbar .nav-link:hover {
+  animation: HoverZoom 150ms ease;
+  animation-fill-mode: both;
+}
+.navbar .nav-link::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+.navbar .nav-link:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+.navbar .nav-link {
+  color: #000;
+}
+.navbar .active {
+  font-weight: bold !important;
+}
+.navbar .dropdown-item.active {
+  background-color: #f3f6f4;
+  color: #000;
+}
+.navbar .dropdown-menu {
+  animation: DropDownLoad 0.3s ease;
+  border: 1px solid black;
+}
+.navbar .dropdown-menu .dropdown-item {
+  font-size: 1.2rem;
+}
+.navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #eeeeee;
+}
+.navbar .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+.navbar .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+
+.carousel-content {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  z-index: 20;
+  color: white;
+}
+.carousel-content h1 {
+  font-size: 5rem;
+  margin-bottom: 3%;
+  color: white;
+}
+.carousel-content h1 span {
+  font-style: italic;
+}
+.carousel-content h2 {
+  font-size: 5rem;
+  margin-bottom: 3%;
+}
+.carousel-content h2 span {
+  font-style: italic;
+}
+
+main .main-header {
+  text-align: center;
+  padding: 1% 0%;
+  font-weight: bold;
+}
+main .container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+main .container .card {
+  width: 100%;
+  animation: HoverZoomOut 0.3s ease;
+}
+main .container .card svg {
+  text-align: center;
+  justify-content: center;
+  margin: 5% auto;
+}
+main .container .card a {
+  color: #fff;
+}
+main .container .card a:hover {
+  color: #000;
+}
+main .container .card .card-body .card-title {
+  font-weight: bold;
+}
+main .container .card .card-body .card-text a {
+  color: #000;
+  font-style: italic;
+  text-decoration: underline;
+}
+main .container .card .card-body .card-text span {
+  font-weight: bold;
+}
+main .container .card .card-body .card-span {
+  font-style: italic;
+}
+main .container .card .card-body .btn-primary {
+  border: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  animation: HoverZoomOut 0.3s ease;
+  font-weight: bold;
+}
+main .container .card .card-body .btn-primary:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+  animation: HoverZoom 0.3s ease;
+  animation-fill-mode: both;
+}
+main .container .card .card-body h3 {
+  text-align: center;
+}
+main .container .card .card-body details summary {
+  padding: 1% 0;
+}
+main .container .card .card-body details summary:hover {
+  text-decoration: underline;
+}
+main .container .card .card-body details a {
+  color: #000;
+  text-decoration: underline;
+  font-style: italic;
+}
+main .container .card:hover {
+  animation: HoverZoom 0.3s ease;
+  animation-fill-mode: both;
+}
+main .container .accordion .accordion-button {
+  background-color: #f2f2f2;
+  color: #000;
+}
+main .container .accordion .accordion-body {
+  background-color: #fff;
+  color: #000;
+}
+main .container .accordion .accordion-body a {
+  color: #000;
+  font-style: italic;
+  text-decoration: underline;
+}
+main iframe {
+  animation: BreathingXY 5s ease;
+  animation-iteration-count: infinite;
+  animation-fill-mode: both;
+}
+main .splitter {
+  width: 50%;
+  background-color: #000;
+  margin: 3% auto;
+  opacity: 1;
+}
+main #join-button {
+  background-color: #000;
+  color: #fff;
+  animation: BreathingX 6s ease;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+main #join-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid black;
+}
+main a {
+  text-decoration: none;
+}
+main .pad-join {
+  margin-top: 8%;
+  margin-bottom: -5%;
+}
+@media only screen and (max-width: 1250px) {
+  main .pad-join {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .pad-join {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .pad-join {
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main .pad-join {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+main .pad-join .container .card {
+  border: none;
+  justify-content: center;
+  padding: 0;
+}
+main .pad-join .container p {
+  margin-top: -5%;
+  font-size: 20px;
+}
+main .pad-katastar {
+  margin-top: 8%;
+  margin-bottom: -5%;
+}
+@media only screen and (max-width: 1250px) {
+  main .pad-katastar {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .pad-katastar {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .pad-katastar {
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main .pad-katastar {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+main .pad-katastar #Toast-Alert {
+  border: #f2f2f2;
+}
+main .pad-katastar #Toast-Alert .toast-header {
+  font-size: 0.9rem;
+}
+main .pad-katastar #Toast-Alert .toast-header img {
+  width: 3%;
+}
+main .pad-katastar #DisplayOptions1 button {
+  background-color: #fff;
+  color: #000;
+  animation: HoverZoomOut 300ms ease;
+  animation-fill-mode: both;
+}
+main .pad-katastar #DisplayOptions1 button:hover {
+  animation: HoverZoom 300ms ease;
+  animation-fill-mode: both;
+}
+main .pad-katastar #DisplayOptions1 .dropdown-menu {
+  animation: FadeInLoad 0.2s ease;
+  animation-fill-mode: both;
+  border: 1px solid black;
+}
+main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+}
+main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item:hover {
+  background-color: #eeeeee;
+}
+main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+main .pad-katastar #DisplayOptions1 .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+main .pad-katastar #KatastarImageMapBlock #KatastarImageMappedBlock {
+  max-width: 85%;
+  min-width: 85%;
+  min-height: 930px;
+  margin: 0 auto;
+  overflow-y: hidden;
+}
+main .pad-katastar #KatastarInteractMapBlock #KatastarInteractMap {
+  max-width: 85%;
+  min-width: 85%;
+  min-height: 930px;
+  margin: 0 auto;
+}
+main .pad-about {
+  margin-top: 8%;
+  margin-bottom: -5%;
+}
+@media only screen and (max-width: 1250px) {
+  main .pad-about {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .pad-about {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .pad-about {
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main .pad-about {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+main .pad-about .container .card {
+  margin-top: 3%;
+}
+main .pad-mc-roles {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -5%;
+}
+@media only screen and (max-width: 1250px) {
+  main .pad-mc-roles {
+    margin-top: 10%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main .pad-mc-roles {
+    margin-top: 10%;
+    margin-bottom: 0%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main .pad-mc-roles {
+    margin-bottom: 9%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  main .pad-mc-roles {
+    margin-top: 10%;
+    margin-bottom: 15%;
+  }
+}
+main .pad-mc-roles table {
+  overflow-x: hidden;
+  border: 1px solid white;
+}
+main .pad-mc-roles table thead tr {
+  margin: 1%;
+}
+main .pad-mc-roles table thead tr th {
+  margin: 1%;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+main .pad-mc-roles table thead tr td {
+  margin: 10%;
+}
+main .pad-mc-roles table thead #thPasa {
+  color: #bbbb00;
+}
+main .pad-mc-roles table tbody tr {
+  margin: 1%;
+}
+main .pad-mc-roles table tbody tr th {
+  margin: 1%;
+  font-weight: 100;
+}
+main .pad-mc-roles table tbody tr td {
+  margin: 10%;
+}
+
+footer {
+  border-top: 1px solid black;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  bottom: 0;
+  font-style: italic;
+}
+footer div a {
+  text-decoration: none;
+}
+footer div span {
+  color: black;
+  margin-right: 20px;
+}
+footer .bi {
+  color: black;
+}
+
+#Controls {
+  background-color: #fff;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.5%;
+}
+#Controls img {
+  max-width: 15vw;
+  min-width: 15vw;
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  animation: HoverZoomOut 0.5s ease;
+}
+#Controls img:hover {
+  animation: HoverZoom 0.5s ease;
+  animation-fill-mode: both;
+}
+#Controls p a {
+  color: #000;
+}
+#Controls #MapChoice button {
+  background-color: #fff;
+  color: #000;
+  animation: HoverZoomOut 300ms ease;
+  animation-fill-mode: both;
+}
+#Controls #MapChoice button:hover {
+  animation: HoverZoom 300ms ease;
+  animation-fill-mode: both;
+}
+#Controls #MapChoice .active {
+  font-weight: bold !important;
+}
+#Controls #MapChoice .dropdown-item.active {
+  background-color: #f3f6f4;
+  color: #000;
+}
+#Controls #MapChoice .dropdown-menu {
+  animation: FadeInLoad 0.2s ease;
+  animation-fill-mode: both;
+  border: 1px solid black;
+}
+#Controls #MapChoice .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+}
+#Controls #MapChoice .dropdown-menu .dropdown-item:hover {
+  background-color: #eeeeee;
+}
+#Controls #MapChoice .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+#Controls #MapChoice .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+#Controls #MapChoice .dropdown-menu .dropdown-divider {
+  background-color: #000;
+  width: 80%;
+  margin: 0 auto;
+}
+#Controls #active {
+  background-color: #121212;
+  color: #fff;
+}
+
+#map .ol-zoom {
+  background-color: #121212;
+}
+
+.pad-katastar-map {
+  padding-top: 1%;
+  overflow: hidden;
+}
+.pad-katastar-map #KatastarChoice button {
+  background-color: #fff;
+  color: #000;
+  animation: HoverZoomOut 300ms ease;
+  animation-fill-mode: both;
+}
+.pad-katastar-map #KatastarChoice button:hover {
+  animation: HoverZoom ease 0.3s;
+  animation-fill-mode: both;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu {
+  animation: FadeInLoad 0.2s ease;
+  animation-fill-mode: both;
+  border: 1px solid black;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item {
+  font-size: 1rem;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item:hover {
+  background-color: #eeeeee;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: black;
+  margin: auto;
+  display: block;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-item:hover::after {
+  width: 100%;
+  transition: width 150ms linear;
+}
+.pad-katastar-map #KatastarChoice .dropdown-menu .dropdown-divider {
+  background-color: #000;
+  width: 80%;
+  margin: 0 auto;
+}
+.pad-katastar-map #KatastarIMGMapBlock {
+  height: auto;
+  position: relative;
+}
+.pad-katastar-map #KatastarIMGMapBlock #KatastarIMG {
+  max-width: 90%;
+  height: auto;
+}
+.pad-katastar-map .img-magnifier-glass {
+  position: absolute;
+  border: 1px solid #000;
+  cursor: none;
+  width: 150px;
+  height: 150px;
+}
+
+.breathing-animation {
+  animation: Tugging 1.5s ease;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+
+.breathing-animation:hover {
+  text-decoration: underline;
+}
+
+.div-random-text {
+  min-height: 10vh;
+  max-height: 10vh;
+  font-family: MinecraftFont, Minecraft, serif;
+}
+
+.div-random-textbf {
+  min-height: 10vh;
+  max-height: 10vh;
+  font-family: "Special Elite", system-ui;
+}
+.div-random-textbf h5 {
+  font-family: "Fira Sans Extra Condensed", sans-serif;
+}
+
+.mc-font-text {
+  font-family: MinecraftFont, Minecraft, serif;
+}
+
+.no-detail-marker {
+  list-style: none;
+}
+
+i.fa-solid {
+  padding: 15px;
+}
+
+i.fa-solid.fa-up-right-from-square {
+  padding: 5px;
+}
+
+.no-hover {
+  animation: none !important;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid black;
+}
+
+.separator:not(:empty)::before {
+  margin-right: 0.25em;
+}
+
+.separator:not(:empty)::after {
+  margin-left: 0.25em;
+}
+
+Mods {
+  width: 100%;
+  background-color: #121212;
+  text-align: center;
+  font-family: Lora, serif;
+}
+Mods Header {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+  font-size: 42px;
+  color: white;
+  background-color: #444444;
+  font-weight: bold;
+}
+Mods Mod Libs-And-API {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+}
+Mods Mod Optimization {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+}
+Mods Mod Visual {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+}
+Mods Mod QOL {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+}
+Mods Mod Other {
+  width: 80%;
+  margin: 0.3% auto;
+  display: block;
+  background-color: #121212;
+  border: 1px solid white;
+}
+Mods Title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 60px;
+  text-decoration: underline;
+}
+Mods Name {
+  display: block;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1400px) {
+  .pad-katastar-mappa #KatastarInteractMapBlock #KatastarInteractMap {
+    height: 700px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .nav-item {
+    margin: 15px;
+  }
+  .carousel-content h1 {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .navbar {
+    padding: 0% 2%;
+  }
+  .navbar .navbar-brand img {
+    max-width: 20vw;
+  }
+  .navbar #dark-mode-button {
+    margin-bottom: 5%;
+    margin-left: 2%;
+  }
+  .carousel-content h1 {
+    font-size: 3rem;
+  }
+  .carousel-content h2 {
+    font-size: 3rem;
+  }
+  .col-12.col-sm-12.col-md-12.col-lg-6 {
+    margin-bottom: 3%;
+  }
+  .col-12.col-lg-4 {
+    margin-top: 3%;
+  }
+  .col-12.col-lg-3 {
+    margin-top: 3%;
+  }
+  #Toast-Alert {
+    width: 75% !important;
+  }
+  #Toast-Alert .toast-header img {
+    width: 7% !important;
+  }
+  .pad-katastar-mappa #KatastarImageMapBlock #KatastarImageMappedBlock {
+    height: 1000px;
+  }
+  .pad-katastar-mappa #KatastarInteractMapBlock #KatastarInteractMap {
+    height: 820px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .col-12.col-md-6.col-lg-5 {
+    margin: 1%;
+  }
+  #join-button {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .pad-katastar-mappa #KatastarImageMapBlock {
+    padding-bottom: 2%;
+  }
+  .pad-katastar-mappa #KatastarImageMapBlock #KatastarImageMappedBlock {
+    height: 30px;
+  }
+  .pad-katastar-mappa #KatastarInteractMapBlock #KatastarInteractMap {
+    height: 300px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .carousel-content h1 {
+    font-size: 2rem;
+  }
+  .carousel-content h2 {
+    font-size: 2rem;
+  }
+  .div-random-text {
+    margin: 0% 0% 10% 0%;
+  }
+  .card {
+    animation: none;
+  }
+  .card:hover {
+    animation: none;
+  }
+  .pad-katastar-mappa #KatastarImageMapBlock #KatastarImageMappedBlock {
+    height: 420px;
+  }
+  .pad-katastar-mappa #KatastarInteractMapBlock #KatastarInteractMap {
+    height: 420px;
+  }
+}/*# sourceMappingURL=style.css.map */

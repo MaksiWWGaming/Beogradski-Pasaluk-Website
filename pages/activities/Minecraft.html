@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="sr-Cyrl-CS">
+<head>
+    <!--Meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE11">
+    <meta http-equiv="refresh" content="1000">
+
+    <!--Title, Favicon and Meta-->
+    <title>БП :: Minecraft</title>
+    <link rel="shortcut icon" type="image/png" href="../../img/Trademarks/favicon.png">
+
+    <!--Lesser Meta tags-->
+    <meta name="keywords" content="Minecraft, aternos, сервер, Пашалук, блеја, екипа, житељ">
+    <meta name="description" content="Играј Minecraft са екипом са Београдског Пашалука">
+    <meta name="copyright" content="Београдски Пашалук 2024">
+    <meta name="abstract" content="Играј Minecraft на Пашалуку">
+    <meta name="language" content="serbian">
+    <meta name="robots" content="index, follow">
+    <meta name='apple-mobile-web-app-capable' content='yes'/>
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+	<meta http-equiv='Content-Language' content='sr-Cyrl'/>
+	<meta http-equiv='ImageToolbar' content='No'/>
+	<meta name='Rating' content='General'/>
+    <!--Discord related meta tags-->
+    <meta content="Београдски Пашалук - Minecraft" property="og:title" />
+    <meta content="Играј Minecraft са екипом са Београдског Пашалука" property="og:description" />
+    <meta content="https://beogradski-pasaluk.github.io/pages/activities/Minecraft.html" property="og:url" />
+    <meta content="https://images2.imgbox.com/5e/97/s5dutbrY_o.png" property="og:image" />
+    <meta content="#afdaf0" data-react-helmet="true" name="theme-color" />
+
+    <!--Styles-->
+    <!--Bootstrap style-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--My style-->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!--Scripts-->
+    <!--Bootstrap script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!--FontAwesome-->
+    <script src="https://kit.fontawesome.com/9343e2a586.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrap">
+        <!--Header/Navbar begin-->
+        <header>
+            <nav class="navbar navbar-expand-lg fixed-top autohide">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="../../index.html"><img class="img-fluid col-4" src="../../img/Trademarks/banner.png" alt="Pasaluk Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../../index.html">Почетна</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" role="button" data-bs-toggle="dropdown" aria-expanded="false">Активности <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item active" href="#">Minecraft</a></li>
+                                    <li><a class="dropdown-item" href="Battlefield1.html">Battlefield 1</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">Е-Житељ <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="../e_zitelj/Katastar.html">Катастар</a></li>
+                                    <li><a class="dropdown-item" href="../e_zitelj/Mcranks.html">Рангови</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <!-- <li><a class="dropdown-item" href="#">Вести <sup style="color: red; font-weight: bold;">Ускоро</sup> <img src="../../img/Trademarks/RTP.png" class="card-img-top w-25 d-inline-block" alt="РТП"></a></li> -->
+                                    <li><a class="dropdown-item" href="../e_zitelj/Join_Us.html">Постани житељ</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../About_Us.html">О нама</a>
+                            </li>
+                        </ul>
+                        <i class="fa-solid fa-moon" onclick="DarkModeChange(this)"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--Header/Navbar end-->
+
+        <!--Carousel begin-->
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-touch="false" data-bs-interval="5000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../../img/Pages/Minecraft/Carousel/1.jpg" class="d-block w-100 thumbnail" alt="Слика са Пашалука">
+                    <div class="carousel-content">
+                        <h1>Minecraft на Пашалуку<br>Увек добра блеја!</h1>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../img/Pages/Minecraft/Carousel/2.jpg" class="d-block w-100 thumbnail" alt="Слика са Пашалука">
+                    <div class="carousel-content">
+                        <h2>Са екипом никад досадно!</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../img/Pages/Minecraft/Carousel/3.jpg" class="d-block w-100 thumbnail" alt="Слика са Пашалука">
+                    <div class="carousel-content">
+                        <h2>Заједно смо лепши, заједно смо јачи!</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../img/Pages/Minecraft/Carousel/4.jpg" class="d-block w-100 thumbnail" alt="Слика са Пашалука">
+                    <div class="carousel-content">
+                        <h2>Профи градња свуда око вас!</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="../../img/Pages/Minecraft/Carousel/5.jpg" class="d-block w-100 thumbnail" alt="Слика са Пашалука">
+                    <div class="carousel-content">
+                        <h2>Бесплатан ГСП!</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Carousel end-->
+
+        <!--Main begin-->
+        <main>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-4">
+                        <div class="card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Активна екипа</h5>
+                                <p class="card-text">Реците ћао усамљеним Minecraft ноћима! Уз један пинг на Discord-у увек ће неко бити ту да вам прави друштво!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-4">
+                        <div class="card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-tree" viewBox="0 0 16 16">
+                                <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/>
+                                <path d="m5.93 6.704-.846 8.451a.768.768 0 0 0 1.523.203l.81-4.865a.59.59 0 0 1 1.165 0l.81 4.865a.768.768 0 0 0 1.523-.203l-.845-8.451A1.5 1.5 0 0 1 10.5 5.5L13 2.284a.796.796 0 0 0-1.239-.998L9.634 3.84a.7.7 0 0 1-.33.235c-.23.074-.665.176-1.304.176-.64 0-1.074-.102-1.305-.176a.7.7 0 0 1-.329-.235L4.239 1.286a.796.796 0 0 0-1.24.998l2.5 3.216c.317.316.475.758.43 1.204Z"/>                            
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Здраво окружење</h5>
+                                <p class="card-text">Ако вам је било доста токсичних група, више не морате да се бринете за то! Пашалук пружа пуну подршку свим члановима!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-4">
+                        <div class="card text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M6 3.5A1.5 1.5 0 0 1 7.5 2h1A1.5 1.5 0 0 1 10 3.5v1A1.5 1.5 0 0 1 8.5 6v1H14a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0V8h-5v.5a.5.5 0 0 1-1 0v-1A.5.5 0 0 1 2 7h5.5V6A1.5 1.5 0 0 1 6 4.5zm-6 8A1.5 1.5 0 0 1 1.5 10h1A1.5 1.5 0 0 1 4 11.5v1A1.5 1.5 0 0 1 2.5 14h-1A1.5 1.5 0 0 1 0 12.5zm6 0A1.5 1.5 0 0 1 7.5 10h1a1.5 1.5 0 0 1 1.5 1.5v1A1.5 1.5 0 0 1 8.5 14h-1A1.5 1.5 0 0 1 6 12.5zm6 0a1.5 1.5 0 0 1 1.5-1.5h1a1.5 1.5 0 0 1 1.5 1.5v1a1.5 1.5 0 0 1-1.5 1.5h-1a1.5 1.5 0 0 1-1.5-1.5z"/>
+                            </svg>
+                            <div class="card-body">
+                                <h5 class="card-title">Организација на нивоу</h5>
+                                <p class="card-text">Готово је са препиркама чија је територија, једноставним уписивањем ваше територије у <a href="../e_zitelj/Katastar.html">Катастар</a><i class="fa-solid fa-up-right-from-square"></i> се решавају све ваше муке!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="splitter">
+
+            <!--Pasaluk YT video, link it here when it's made-->
+
+            <!-- <div class="container">
+                <div class="row">
+                    <a href="../e_zitelj/Join_Us.html" target="_blank" rel="noopener noreferrer">
+                        <div class="col">
+                            <div class="card text-center" id="join-button">
+                                <div class="card-body">
+                                    <h5 class="card-title">Постани житељ Пашалука и играј са нама!</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <hr class="splitter"> -->
+
+            <h2 class="main-header">Посвећеност Пашалука Minecraft-у</h2>
+            <!--Top two-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Посвећен традицији</h5>
+                                <p class="card-text">Пашалук је посвећен очувању Српске традиције, културе и језика. <br><span>Ћирилица је службено писмо Пашалука!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-grid"></div>
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Посвећен очувању природе</h5>
+                                <p class="card-text">На Пашалуку је очување природе једно од кључних правила које се поштује без преседана. <br><span>Реците НЕ уништавању животне околине!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Midddle one-->
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="text-center div-random-text">
+                            <h3>Београдски Пашалук</h3>
+                            <h5 class="random-text">За оне праве ортаке који цене туђи труд.<br>Без предаје, само напред! Сада на 1.20.1</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Bottom two-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Посвећен фер плеју</h5>
+                                <p class="card-text">Пашалук увек тражи начин да сви буду једнаки и да игра буде иста за све. <br><span>Непотизам нема места на Пашалуку!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col d-none d-lg-grid"></div>
+                    <div class="col-12 col-md-6 col-lg-5">
+                        <div class="card text-center">
+                            <div class="card-body">
+                                <h5 class="card-title">Посвећен игри</h5>
+                                <p class="card-text">Пашалук је посвећен очувању аутентичног искуства онлајн Minecraft преживљавања. <br><span>За оне праве ортаке који цене туђи труд!</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="splitter">
+
+            <h2 class="main-header">Зашто баш Minecraft на Пашалуку?</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    <strong>Минималан лаг</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-router-fill" viewBox="0 0 16 16">
+                                    <path d="M5.525 3.025a3.5 3.5 0 0 1 4.95 0 .5.5 0 1 0 .707-.707 4.5 4.5 0 0 0-6.364 0 .5.5 0 0 0 .707.707"/>
+                                    <path d="M6.94 4.44a1.5 1.5 0 0 1 2.12 0 .5.5 0 0 0 .708-.708 2.5 2.5 0 0 0-3.536 0 .5.5 0 0 0 .707.707Z"/>
+                                    <path d="M2.974 2.342a.5.5 0 1 0-.948.316L3.806 8H1.5A1.5 1.5 0 0 0 0 9.5v2A1.5 1.5 0 0 0 1.5 13H2a.5.5 0 0 0 .5.5h2A.5.5 0 0 0 5 13h6a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5h.5a1.5 1.5 0 0 0 1.5-1.5v-2A1.5 1.5 0 0 0 14.5 8h-2.306l1.78-5.342a.5.5 0 1 0-.948-.316L11.14 8H4.86zM2.5 11a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m4.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2.5.5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m1.5-.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0m2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0"/>
+                                    <path d="M8.5 5.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0"/>
+                                    </svg>
+                                </button>
+                              </h2>
+                              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="card-text">> На лаг заборавите! Сервер је подешен да вам пружа најлепше искуство, а ништа се не плаћа!</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <strong>Без непознатих људи</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-tree" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
+                                    <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                                    </svg>
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="card-text">> Сервер је whitelisted, тако да само позвани могу да играју са нама. Такође, ваш налог је заштићен енкриптованом лозинком!</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="accordion-item">
+                              <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    <strong>Могућност напредовања</strong>&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-hdd-stack" viewBox="0 0 16 16">
+                                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7m.354-5.854 1.5 1.5a.5.5 0 0 1-.708.708L13 11.707V14.5a.5.5 0 0 1-1 0v-2.793l-.646.647a.5.5 0 0 1-.708-.708l1.5-1.5a.5.5 0 0 1 .708 0M11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                    <path d="M2 13c0 1 1 1 1 1h5.256A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1 1.544-3.393Q8.844 9.002 8 9c-5 0-6 3-6 4"/>
+                                    </svg>
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <p class="card-text">> За ваш напоран труд вас увек чека награда. Покажите се на Пашалуку и можете добити додатне привилегије! <a href="../e_zitelj/Mcranks.html" rel="noopener noreferrer">Сазнај више</a></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card text-center" id="join-button">
+                            <a href="https://www.mediafire.com/folder/a3jvfhix6d0ci/World_Download" target="_blank" rel="noopener noreferrer">
+                                <div class="card-body">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                        <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+                                        <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+                                      </svg>
+                                    <h5 class="card-title d-inline-block">Download Пашалук world file<i class="fa-solid fa-up-right-from-square"></i></h5>
+                                </div>
+                            </a>
+                        </div>
+                        <p class="text-center"><i>Ажурирање сваког 1. и 15. у месецу</i></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="splitter">
+
+            <h2 class="main-header">Улепшајте доживљај Пашалука!</h2>
+            <details>
+                <summary class="no-detail-marker">
+                    <p class="text-center breathing-animation"><i>Сазнајте више</i></p>
+                </summary>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Texture packs</h5>
+                                    <p class="card-text">Улепшај доживљај Пашалука са овим фантастичним текстурама!</p>
+                                    <details>
+                                        <summary>
+                                            Patrix
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://media.forgecdn.net/attachments/590/214/themes.jpg" class="d-block w-100" alt="МС са Patrix texture pack">
+                                            <a href="https://www.curseforge.com/minecraft/texture-packs/patrix-32x">Download Patrix</a><i class="fa-solid fa-up-right-from-square"></i>
+                                            <hr class="splitter">
+                                        </div>
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Faithful
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://raw.githubusercontent.com/Faithful-Resource-Pack/Branding/main/social%20media/banners/curseforge/f32_banner.png" class="d-block w-100" alt="МС са Faithful texture pack">
+                                            <a href="https://faithfulpack.net/">Download Faithful</a><i class="fa-solid fa-up-right-from-square"></i>
+                                            <hr class="splitter">
+                                        </div>
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Dramatic Skys
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://i.imgur.com/vmA4DHI.png" class="d-block w-100" alt="МС са Dramatic skies texture pack">
+                                            <a href="https://www.curseforge.com/minecraft/texture-packs/dramatic-skys">Download Dramatic Skys</a><i class="fa-solid fa-up-right-from-square"></i>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Modpack</h5>
+                                    <p class="card-text">Улепшај доживљај Пашалука са овим модовима!
+                                        Пашалук подржава коришћење <strong>client side</strong> модова, с тим на уму вам пружамо download линк за корисне Пашалук модове.
+                                        <br>
+                                    </p>
+                                    <!-- <details>
+                                        <summary>
+                                            Visual mods
+                                        </summary>
+                                        <div class="details-content">
+                                            <p><i>За Fabric 0.15.7</i></p>
+                                            <img src="https://cdn.apexminecrafthosting.com/img/uploads/2023/06/23205157/Breakneck-Header-1.gif" class="d-block w-100" alt="MC модови">
+                                            <a href="https://www.mediafire.com/folder/731yg3hx2cq0t/Modpack">Download Пашалук optimized modpack</a><br>
+                                            <hr class="splitter">
+                                        </div>
+                                    </details> -->
+                                    <details>
+                                        <summary>
+                                            Modpack
+                                        </summary>
+                                        <div class="details-content">
+                                            <p><i>За Fabric 0.14.23</i></p>
+                                            <img src="https://static.planetminecraft.com/files/image/minecraft/blog/2023/642/17125077-modsreview_l.webp" class="d-block w-100" alt="MC модови">
+                                            <a href="https://www.mediafire.com/file/18iqhkvg81fmtyl/Pasaluk_Modpack_1.20.1.zip/file">Download Пашалук modpack</a><i class="fa-solid fa-up-right-from-square"></i><br>
+                                        </div>
+                                        <a href="Modlist.xml" target="_blank"><b style="color: #287CC2;">Листа модова</b></a>
+                                        <hr class="splitter">
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Optimization mods
+                                        </summary>
+                                        <div class="details-content">
+                                            <p><i>За Fabric 0.15.7</i></p>
+                                            <img src="https://cdn.apexminecrafthosting.com/img/uploads/2023/06/23205157/Breakneck-Header-1.gif" class="d-block w-100" alt="MC модови">
+                                            <a href="https://www.mediafire.com/file/bpkzn8tixgqroeg/Optimized_Pasaluk_1.20.1.zip/file">Download Пашалук optimized modpack</a><i class="fa-solid fa-up-right-from-square"></i><br>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h5 class="card-title">Shader packs</h5>
+                                    <p class="card-text">Улепшај доживљај Пашалука са овим фантастичним шејдерима!</p>
+                                    <details>
+                                        <summary>
+                                            Complementary Shaders
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://www.complementary.dev/assets/img/newScreenshots/reim1_oldGrowth.jpg" class="d-block w-100" alt="MC са Complementary shaders">
+                                            <a href="https://www.complementary.dev/shaders/">Download Complementary Shaders</a><i class="fa-solid fa-up-right-from-square"></i>
+                                            <hr class="splitter">
+                                        </div>
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            SEUS Renewed
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://www.sonicether.com/wp-content/uploads/2020/02/2017-11-30_20.45.50-1.jpg" class="d-block w-100" alt="MC са SEUS Renewed Shaders">
+                                            <a href="https://www.sonicether.com/seus/">Download SEUS Renewed Shaders</a><i class="fa-solid fa-up-right-from-square"></i>
+                                            <hr class="splitter">
+                                        </div>
+                                    </details>
+                                    <details>
+                                        <summary>
+                                            Sildur's Vibrant Shaders
+                                        </summary>
+                                        <div class="details-content">
+                                            <img src="https://i.imgur.com/glF4mOi.png" class="d-block w-100" alt="MC са Sildur's Vibrant Shaders">
+                                            <a href="https://sildurs-shaders.github.io/">Download Sildur's Vibrant Shaders</a><i class="fa-solid fa-up-right-from-square"></i>
+                                        </div>
+                                    </details>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <div class="container">
+                <div class="row">
+                    <a href="../e_zitelj/Join_Us.html" target="_blank" rel="noopener noreferrer">
+                        <div class="col">
+                            <div class="card text-center" id="join-button">
+                                <div class="card-body">
+                                    <h5 class="card-title">Постани житељ Пашалука и играј са нама!</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </main>
+        <!--Main end-->
+
+        <!--Footer begin-->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+            <div class="col-md-10 d-flex align-items-center">
+                <a href="https://beogradski-pasaluk.github.io/"><span class="mb-4 mb-md-0">&copy; 2021. - 2024. Београдски Пашалук</span></a> 
+            </div>
+            <div>
+                <a href="https://discord.gg/wC64Z9rMkk" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-discord" viewBox="0 0 16 16">
+                        <path d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"/>
+                    </svg>   
+                </a>
+                <a href="https://github.com/Beogradski-Pasaluk/Beogradski-Pasaluk.github.io" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                    </svg>
+                </a>
+            </div>
+        </footer>
+        <!--Footer end-->
+    </div>
+    <!--My script-->
+    <script src="../../js/script.js"></script>
+    <script src="../../js/randomtextmc.js"></script>
+    <script type="text/javascript">
+        alert("Сајт Београдског Пашалука се више не одржава од 20. Априла 2024.");
+        alert("Стара Управа Београдског Пашалука вам жели угодно време на Пашалуку.");
+    </script>
+</body>
+</html>

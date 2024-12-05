@@ -1,0 +1,660 @@
+@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Cormorant+SC:wght@300;400;500;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap);
+@import url(https://fonts.cdnfonts.com/css/minecraft-4);
+@import url(https://fonts.googleapis.com/css2?family=Special+Elite&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans+Extra+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Elite&display=swap);
+@font-face {
+    font-family: "MinecraftFont";
+    src: url(font/cyrillic-mojang-font-beta.ttf)
+}
+//Fonts /\ 
+//Partials \/
+@import "partials/variables";
+@import "partials/animations";
+@import "partials/mixins";
+@import "partials/darkmode";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    animation: FadeInLoad 1s ease;
+    animation-fill-mode: both;
+    overflow-x: hidden;
+    font-family: Lora, serif;
+    color: $whitetxt;
+    background-attachment: fixed;
+}
+
+//Scrollbar design webkit and moz
+::-webkit-scrollbar {
+    @include scrollbar;
+}
+
+::-webkit-scrollbar-thumb {
+    @include scrollbar-thumb;
+}
+
+::-moz-scrollbar {
+    @include scrollbar;
+}
+
+::-moz-scrollbar-thumb {
+    @include scrollbar-thumb;
+}
+
+//Navbar
+.navbar {
+    box-shadow: 0 4px 3px 0px #000;
+    animation: TopBottomLoad 1s ease;
+    background-color: $whitenavbar;
+    padding: 0 3rem;
+    font-family: Cormorant SC, sans-serif;
+    .navbar-brand img {
+        max-width: 15vw; 
+        display: block;
+        width: 100%;
+        animation: HoverZoomOut 0.5s ease;
+    }
+    .navbar-brand img:hover {
+        animation: HoverZoom 0.5s ease;
+        animation-fill-mode: both;
+    }
+    .navbar-nav {
+        color: $whitetxt;
+    }
+    .nav-item {
+        font-size: 1.5em;
+        margin: 30px;
+    }
+    .nav-link {
+        animation: HoverZoomOut 0.3s ease;
+        // img {
+        //     width: 10%;
+        // }
+    }
+    .nav-link:hover {
+        animation: HoverZoom 150ms ease;
+        animation-fill-mode: both;
+    }
+    .nav-link::after{
+        @include underline-hover-after;
+    }
+    .nav-link:hover::after{
+        @include underline-hover-after2;
+    }
+    .nav-link {
+        color: $whitetxt;
+    }
+    .active {
+        font-weight: bold !important;
+    }
+    .dropdown-item.active {
+        background-color: $whitenavbar;
+        color: $whitetxt;
+    }
+    .dropdown-menu {
+            animation: DropDownLoad 0.3s ease;
+            border: $whiteborder;
+        .dropdown-item {
+            font-size: 1.2rem;
+        }
+        .dropdown-item:hover {
+            background-color: $whitelinkhover;
+        }
+        .dropdown-item::after{
+            @include underline-hover-after;
+        }
+        .dropdown-item:hover::after{
+            @include underline-hover-after2;
+        }
+    }
+}
+
+//Text on carousel images
+.carousel-content {
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    z-index: 20;
+    color: white;
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 3%;
+        color: white;
+        span {
+            font-style: italic;
+        }
+    }
+    h2 {
+        font-size: 5rem;
+        margin-bottom: 3%;
+        span {
+            font-style: italic;
+        }
+    }
+}
+
+//Main
+main {
+    .main-header {
+        text-align: center;
+        padding: 1% 0%;
+        font-weight: bold;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5%;
+        margin-top: 1%;
+        .card {
+            width: 100%;
+            animation: HoverZoomOut 0.3s ease;
+            svg {
+                text-align: center;
+                justify-content: center;
+                margin: 5% auto;
+            }
+            a {
+                color: $darktxt;
+            }
+            a:hover {
+                color: $whitetxt;
+            }
+            .card-body {
+                .card-title {
+                    font-weight: bold;
+                }
+                .card-text {
+                    a {
+                        color: $whitetxt;
+                        font-style: italic;
+                        text-decoration: underline;
+                    } 
+                    span {
+                        font-weight: bold;
+                    }
+                }
+                .card-span {
+                    font-style: italic;
+                }
+                .btn-primary {
+                    border: $whiteborder;
+                    background-color: #000;
+                    color: $darktxt;
+                    animation: HoverZoomOut 0.3s ease;
+                    font-weight: bold;
+                }
+                .btn-primary:hover {
+                    background-color: $whitebg;
+                    color: $whitetxt;
+                    border: $whiteborder ;
+                    animation: HoverZoom 0.3s ease;
+                    animation-fill-mode: both;
+                }
+                h3 {
+                    text-align: center;
+                }
+                details {
+                    summary {
+                        padding: 1% 0;
+                    }
+                    summary:hover {
+                        text-decoration: underline;
+                    }
+                    a {
+                        color: $whitetxt;
+                        text-decoration: underline;
+                        font-style: italic;
+                    }
+                }
+            }
+        }
+        .card:hover {
+            animation: HoverZoom 0.3s ease;
+            animation-fill-mode: both;
+        }
+        .accordion {
+            .accordion-button {
+                background-color: #f2f2f2;
+                color: $whitetxt;
+            }
+            .accordion-body {
+                background-color: $whitebg;
+                color: $whitetxt;
+                a {
+                    color: $whitetxt;
+                    font-style: italic;
+                    text-decoration: underline;                        
+                }
+            }
+        }
+    }
+    iframe {
+        animation: BreathingXY 5s ease;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+    }
+    .splitter {
+        width: 50%;
+        background-color: $whitetxt;
+        margin: 3% auto;
+        opacity: 1;
+    }
+    #join-button {
+        background-color: #000;
+        color: $darktxt;
+        animation: BreathingX 6s ease;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite;
+        &:hover {
+            background-color: $whitebg;
+            color: $whitetxt;
+            border: $whiteborder;
+        }
+    }
+    a {
+        text-decoration: none;
+    }
+    //For join us
+    .pad-join {
+        @include pad;
+        .container {
+            .card {
+                border: none;
+                justify-content: center;
+                padding: 0;
+            }
+            p {
+                margin-top: -5%;
+                font-size: 20px;
+            }
+        }
+    }
+    //For katastar
+    .pad-katastar {
+        @include pad;
+        #Toast-Alert {
+            border: #f2f2f2;
+            .toast-header {
+                font-size: 0.9rem;
+                img {
+                    width: 3%;
+                }
+            }
+        }
+        #DisplayOptions1 {
+            button {
+                background-color: $whitebg;
+                color: $whitetxt;
+                animation: HoverZoomOut 300ms ease;
+                animation-fill-mode: both;
+                &:hover {
+                    animation: HoverZoom 300ms ease;
+                    animation-fill-mode: both;
+                }
+            }
+            .dropdown-menu {
+                animation: FadeInLoad 0.2s ease;
+                animation-fill-mode: both;
+                border: $whiteborder;
+                .dropdown-item {
+                    font-size: 1rem;
+                }
+                .dropdown-item:hover {
+                    background-color: $whitelinkhover;
+                }
+                .dropdown-item::after{
+                    @include underline-hover-after;
+                }
+                .dropdown-item:hover::after{
+                    @include underline-hover-after2;
+                }
+            }
+        }
+        #KatastarImageMapBlock {
+            #KatastarImageMappedBlock {
+                max-width: 85%;
+                min-width: 85%;
+                min-height: 930px;
+                margin: 0 auto;
+                overflow-y: hidden;
+            }
+        }
+        #KatastarInteractMapBlock {
+            #KatastarInteractMap {
+                max-width: 85%;
+                min-width: 85%;
+                min-height: 930px;
+                margin: 0 auto;
+            }
+        }
+    }    
+    //For about us
+    .pad-about {
+        @include pad;
+        .container {
+            .card {
+                margin-top: 3%;             
+            }
+        }
+    }   
+    //For mc roles 
+    .pad-mc-roles {
+        text-align: center;
+        @include pad;
+        table {
+            overflow-x: hidden;
+            border: $darkborder;
+            thead {
+                tr {
+                    margin: 1%;
+                    th {
+                        margin: 1%;
+                        font-size: 1.3rem;
+                        font-weight: bold;
+                    }
+                    td {
+                        margin: 10%;
+                    }
+                }
+                #thPasa {
+                    color: darken($color: #FFFF55, $amount: 30);
+                }
+            }
+            tbody {
+                tr {
+                    margin: 1%;
+                    th {
+                        margin: 1%;
+                        font-weight: 100;
+                    }
+                    td {
+                        margin: 10%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//Footer
+footer {
+   border-top: $whiteborder;
+   width: 90%;
+   margin: 0 auto;
+   position: relative;
+   bottom: 0;
+   font-style: italic;
+    div {
+        a {
+            text-decoration: none;
+        }
+        span {
+            color: black;
+            margin-right: 20px;
+        }
+    }
+    .bi {
+        color: black;
+    }
+}
+
+//For Interactive map 
+#Controls {
+    background-color: $whitebg;
+    border-bottom: $whiteborder;
+    padding-bottom: 0.5%;
+    img {
+        max-width: 15vw;
+        min-width: 15vw;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        animation: HoverZoomOut 0.5s ease;
+    }
+    img:hover {
+        animation: HoverZoom 0.5s ease;
+        animation-fill-mode: both;
+    }
+    p {
+        a {
+            color: $whitetxt;
+        }
+    }
+    #MapChoice {
+        button {
+            background-color: $whitebg;
+            color: $whitetxt;
+            animation: HoverZoomOut 300ms ease;
+            animation-fill-mode: both;
+            &:hover {
+                animation: HoverZoom 300ms ease;
+                animation-fill-mode: both;
+            }
+        }
+        .active {
+            font-weight: bold !important;
+        }
+        .dropdown-item.active {
+            background-color: $whitenavbar;
+            color: $whitetxt;
+        }
+        .dropdown-menu {
+                animation: FadeInLoad 0.2s ease;
+                animation-fill-mode: both;
+                border: $whiteborder;
+            .dropdown-item {
+                font-size: 1rem;
+            }
+            .dropdown-item:hover {
+                background-color: $whitelinkhover;
+            }
+            .dropdown-item::after{
+                @include underline-hover-after;
+            }
+            .dropdown-item:hover::after{
+                @include underline-hover-after2;
+            }
+            .dropdown-divider {
+                background-color: $whitetxt;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    #active {
+        background-color: $darkbg;
+        color: $darktxt;
+    }
+}
+
+#map {
+    .ol-zoom {
+        background-color: $darkbg;
+    }
+}
+
+//External katastar map
+.pad-katastar-map {
+    padding-top: 1%;
+    overflow: hidden;
+    #KatastarChoice {
+        @extend #KatastarChoice;
+        button {
+            background-color: $whitebg;
+            color: $whitetxt;
+            animation: HoverZoomOut 300ms ease;
+            animation-fill-mode: both;
+            &:hover {
+                animation: HoverZoom ease 0.3s;
+                animation-fill-mode: both;
+            }
+        }
+        .dropdown-menu {
+            animation: FadeInLoad 0.2s ease;
+            animation-fill-mode: both;
+            border: $whiteborder;
+            .dropdown-item {
+                font-size: 1rem;
+            }
+            .dropdown-item:hover {
+                background-color: $whitelinkhover;
+            }
+            .dropdown-item::after{
+                @include underline-hover-after;
+            }
+            .dropdown-item:hover::after{
+                @include underline-hover-after2;
+            }
+            .dropdown-divider {
+                background-color: $whitetxt;
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+    }
+    #KatastarMapChoice {
+        @extend #KatastarMapChoice;
+    }
+    #KatastarIMGMapBlock {
+        height: auto;
+        position: relative;
+        #KatastarIMG {
+            max-width: 90%;
+            height: auto;
+        }
+    }
+    .img-magnifier-glass {
+        position: absolute;
+        border: 1px solid #000;
+        cursor: none;
+        width: 150px;
+        height: 150px;
+      }
+}
+
+
+//
+//Other CSS
+//
+
+.breathing-animation {
+    animation: Tugging 1.5s ease;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+.breathing-animation:hover {
+    text-decoration: underline;
+}
+
+.div-random-text{
+    min-height: 10vh;
+    max-height: 10vh;
+    font-family: MinecraftFont, Minecraft, serif;
+}
+
+.div-random-textbf{
+    min-height: 10vh;
+    max-height: 10vh;
+    font-family: 'Special Elite', system-ui;
+    h5 {
+        font-family: "Fira Sans Extra Condensed", sans-serif;
+    }
+}
+
+.mc-font-text {
+    font-family: MinecraftFont, Minecraft, serif;
+}
+
+.no-detail-marker {
+    list-style: none; //Remove detail marker from summary 
+}
+
+i.fa-solid {
+    padding: 15px;
+}
+
+i.fa-solid.fa-up-right-from-square {
+    padding: 5px;
+}
+
+.no-hover { //removes hover animation on cards
+    animation: none !important;
+}
+
+.separator {//separates dropdowns
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: $whitetxt;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: $whiteborder;
+}
+ 
+.separator:not(:empty)::before {
+    margin-right: .25em;
+}
+  
+.separator:not(:empty)::after {
+    margin-left: .25em;
+}
+
+//
+//XML Style
+//
+Mods {
+    width: 100%;
+    background-color: $darkbg;
+    text-align: center;
+    font-family: Lora, serif;
+    Header {
+        @include display;
+        font-size: 42px;
+        color: white;
+        background-color: $darklinkhover;
+        font-weight: bold;
+    }
+    Mod {
+        Libs-And-API {
+            @include display;
+        }
+        Optimization {
+            @include display;
+        }
+        Visual {
+            @include display;
+        }
+        QOL {
+            @include display;
+        }
+        Other {
+            @include display;
+        }
+    }
+    Title {
+        color: $darktxt;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 60px;
+        text-decoration: underline;
+    }
+    Name {
+        display: block;
+        color: $whitebg;
+    }
+}
+//End XML Styling
+
+@import "partials/responsive";
